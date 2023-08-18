@@ -21,5 +21,5 @@ Route::get('/', function () {
 
 Route::controller(UsuarioController::class)->group(function(){
     Route::get('usuario', "index");
-    Route::get('usuario/{$id}', "mostrar");
+    Route::get('usuario/{id}', "mostrar");
 });

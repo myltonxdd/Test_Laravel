@@ -16,9 +16,9 @@ class UsuarioController extends Controller
         return Usuario::all();
     }
 
-    public function mostrar($id)
+    public function mostrar(Request $request)
     {
-        return Usuario::find($id);
+        return Usuario::find($request->id);
     }
 
     /**
